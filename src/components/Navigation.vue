@@ -1,11 +1,26 @@
 <template>
-  <h1>Dashboard</h1>
+  <nav class="nav has-shadow">
+    <div class="container">
+      <left-links />
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <right-links />
+    </div>
+  </nav>
 </template>
 
 <script>
-  export default {}
+  import RightLinks from './RightLinks.vue';
+  import LeftLinks from './LeftLinks.vue';
+
+  export default {
+    components: { RightLinks, LeftLinks }
+  }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

@@ -1,9 +1,15 @@
 <template>
-  <h1>Hello From vue JS</h1>
+  <layout>
+    <h1>Layout</h1>
+  </layout>  
 </template>
 
 <script>
-export default {}
+  import Layout from './components/Layout.vue';
+
+  export default {
+    components: { Layout }
+  }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" src="./styles/app.scss"></style>
